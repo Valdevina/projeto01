@@ -14,3 +14,10 @@
         </figure>
 </section>
 */
+const main= document.querySelector("main");// selecionar  a tag main
+main.immerHTML="<h2>cardapio do dia </h2>";
+const diaDaSemana= [`domingo`,`segunda-feira`,`terça-feira`,`quarta-feira`,`quinta-feira`,`sexta-feira`,`sabado`]
+    const hoje= new Date().getDay();
+    //Date informa a data e o getDay()informaqualdos7(0-6)
+    const diaAtual= diaDaSemana[hoje]
+    alert(diaAtual)
